@@ -1,8 +1,5 @@
-package window;
+package autoSelector;
 
-import java.util.ArrayList;
-
-import autoSelector.AppConsts;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
@@ -14,14 +11,17 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-public class Main extends Application
+/*
+ * The GUI displayed to the user. It should contain no logic and only interact with the Presenter 
+ */
+public class AutoSelectorView extends Application
 {
 	@Override
 	public void start(Stage primaryStage) 
 	{
 		try 
 		{
-			Parent root = FXMLLoader.load(getClass().getResource("MainDesign.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("auto_selector.fxml"));
 	        primaryStage.setTitle("Autonomous Selector");
 	        primaryStage.setScene(new Scene(root, 800, 500));
 	        primaryStage.show();
@@ -52,8 +52,6 @@ public class Main extends Application
 		    public void handle(ActionEvent event) 
 		    {
 		        System.out.println("this is called every " + AppConsts.REFRESH_DELAY_SEC + " seconds on UI thread");
-		        ArrayList<Integer> list = new ArrayList<Integer>();
-		        
 		    }
 		};
 	}

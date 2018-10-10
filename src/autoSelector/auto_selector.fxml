@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autoSelector.AutoSelectorPresenter">
+   <children>
+      <ToggleButton fx:id="button1" layoutX="117.0" layoutY="170.0" mnemonicParsing="false" onAction="#changeButtonLabel" prefHeight="61.0" prefWidth="122.0" text="Button 1">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup1" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="button2" layoutX="239.0" layoutY="170.0" mnemonicParsing="false" onAction="#changeButtonLabel" prefHeight="61.0" prefWidth="122.0" text="Button 2" toggleGroup="$toggleGroup1" />
+      <ToggleButton fx:id="button3" layoutX="361.0" layoutY="170.0" mnemonicParsing="false" onAction="#changeButtonLabel" prefHeight="61.0" prefWidth="122.0" text="Button 3" toggleGroup="$toggleGroup1" />
+   </children>
+</Pane>
