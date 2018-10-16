@@ -1,3 +1,9 @@
+# Eclipse
+.project
+
+# Java version
+.classpath
+
 # Compiled class file
 *.class
 
